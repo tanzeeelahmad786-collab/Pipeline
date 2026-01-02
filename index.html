@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tanzeel Ahmad | Portfolio</title>
+    <style>
+        :root {
+            --primary: #00d2ff;
+            --secondary: #3a7bd5;
+            --bg: #0f172a;
+            --card-bg: #1e293b;
+            --text: #f8fafc;
+            --text-muted: #94a3b8;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        /* Header Section */
+        header {
+            text-align: center;
+            padding: 4rem 0;
+            background: linear-gradient(to right, var(--primary), var(--secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        header h1 {
+            font-size: 3.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            -webkit-text-fill-color: var(--text-muted);
+            font-size: 1.2rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        /* Sections */
+        section {
+            margin-bottom: 4rem;
+        }
+
+        h2 {
+            border-left: 4px solid var(--primary);
+            padding-left: 1rem;
+            margin-bottom: 1.5rem;
+            font-size: 1.8rem;
+        }
+
+        .card {
+            background: var(--card-bg);
+            padding: 1.5rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Grid Layouts */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        /* Skills Tags */
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.8rem;
+        }
+
+        .skill-tag {
+            background: rgba(0, 210, 255, 0.1);
+            border: 1px solid var(--primary);
+            color: var(--primary);
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+
+        /* Contact Section */
+        .contact-links {
+            text-align: center;
+            margin-top: 1rem;
+        }
+
+        .contact-links a {
+            color: var(--primary);
+            text-decoration: none;
+            margin: 0 1rem;
+            font-weight: bold;
+        }
+
+        .contact-links a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 600px) {
+            header h1 { font-size: 2.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Tanzeel Ahmad</h1>
+            <p>DevOps Engineer | Software Enthusiast</p>
+        </header>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <div class="card">
+                <p>Hello! I am Tanzeel Ahmad. I specialize in building and scaling robust applications. My expertise lies in automating workflows, managing cloud infrastructure, and ensuring seamless deployment cycles using modern tools like Docker and SonarQube.</p>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>Technical Skills</h2>
+            <div class="skills-container">
+                <span class="skill-tag">Docker</span>
+                <span class="skill-tag">SonarQube</span>
+                <span class="skill-tag">Ubuntu/Linux</span>
+                <span class="skill-tag">CI/CD Pipelines</span>
+                <span class="skill-tag">HTML & CSS</span>
+                <span class="skill-tag">Git & GitHub</span>
+                <span class="skill-tag">Shell Scripting</span>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>Featured Projects</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>SonarQube Implementation</h3>
+                    <p>Configured automated code quality analysis for enterprise-level applications, reducing technical debt by 30%.</p>
+                </div>
+                <div class="card">
+                    <h3>Dockerized Environments</h3>
+                    <p>Containerized complex microservices architectures to ensure consistency across development and production environments.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Get In Touch</h2>
+            <div class="card contact-links">
+                <p>I'm always open to discussing new projects or opportunities!</p>
+                <br>
+                <a href="mailto:tanzeel@example.com">Email Me</a>
+                <a href="#">LinkedIn</a>
+                <a href="#">GitHub</a>
+            </div>
+        </section>
+
+        <footer>
+            &copy; 2026 Tanzeel Ahmad. Built with passion.
+        </footer>
+    </div>
+
+</body>
+</html>
